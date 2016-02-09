@@ -4,3 +4,5 @@ description: >
   responsive site template freebie<br />
   crafted by <a href="http://html5up.net">HTML5 UP</a>.
 copyright: Untitled
+sass:
+  sass_dir: assets/sass
