@@ -8,4 +8,6 @@ sass:
   sass_dir: assets/sass
 permalink: none
 url: http://example.com
-baseurl: 
+twitter_username: "#"
+github_username:  "#"
+email: "#"

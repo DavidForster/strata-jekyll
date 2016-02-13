@@ -1,9 +1,15 @@
 <!-- Footer -->
   <footer id="footer">
     <ul class="icons">
-      <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-      <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-      <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      {% if site.twitter_username %}
+      <li><a href="https://twitter.com/{{ site.twitter_username }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      {% endif %}
+      {% if site.github_username %}
+      <li><a href="https://github.com/{{ site.github_username }}" class="icon fa-github"><span class="label">Github</span></a></li>
+      {% endif %}
+      {% if site.email %}
+      <li><a href="mailto:{{ site.email }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      {% endif %}
       <li><a href="{{ site.github.url }}/feed.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
     </ul>
     <ul class="copyright">
