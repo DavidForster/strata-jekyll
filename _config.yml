@@ -11,3 +11,6 @@ url: http://example.com
 twitter_username: "#"
 github_username:  "#"
 email: "#"
+gems: [jekyll-paginate]
+paginate_path: "/page/:num/"
+paginate: 5
