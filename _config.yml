@@ -6,7 +6,6 @@ description: >
 copyright: Untitled
 sass:
   sass_dir: assets/sass
-permalink: none
 url: http://example.com
 facebook_username:
 twitter_username: "#"
