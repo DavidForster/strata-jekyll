@@ -8,7 +8,12 @@ sass:
   sass_dir: assets/sass
 permalink: none
 url: http://example.com
+facebook_username:
 twitter_username: "#"
+linkedin_username: "#"
+instagram_username:
+pinterest_username:
+flickr_username:
 github_username:  "#"
 email: "#"
 gems: [jekyll-paginate]
