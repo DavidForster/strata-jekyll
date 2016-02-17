@@ -1,0 +1,30 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	{% capture siteurl %}{% if site.github.url %}{{ site.github.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
+	<title>{{ site.title | xml_escape }}</title>
+	<subtitle>{{ site.description | markdownify | strip_html | xml_escape }}</subtitle>
+	<link href="{{ siteurl }}/atom.xml" rel="self" />
+	<link href="{{ siteurl }}/" />
+	<id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+  {% for post in site.posts limit:10 %}
+	<entry>
+		<title>{{ post.title | xml_escape }}</title>
+		<link href="{{ post.url | prepend: siteurl }}" />
+		<link rel="alternate" type="text/html" href="{{ post.url | prepend: siteurl }}"/>
+		<id>{{ post.url | prepend: siteurl }}</id>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				{{ post.content }}
+			</div>
+		</content>
+		<author>
+			<name>{{ site.copyright }}</name>
+		</author>
+	</entry>
+  {% endfor %}
+</feed>
