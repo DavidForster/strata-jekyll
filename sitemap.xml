@@ -8,7 +8,11 @@ sitemap:
   {% for post in site.posts %}
     {% unless post.published == false %}
     <url>
+      {% if site.github.url %}
       <loc>{{ site.github.url }}{{ post.url }}</loc>
+      {% else %}
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% endif %}
       {% if post.sitemap.lastmod %}
         <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif post.date %}
@@ -32,7 +36,11 @@ sitemap:
   {% for page in site.pages %}
     {% unless page.sitemap.exclude == "yes" %}
     <url>
+      {% if site.github.url %}
       <loc>{{ site.github.url }}{{ page.url | remove: "index.html" }}</loc>
+      {% else %}
+      <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+      {% endif %}
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
