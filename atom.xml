@@ -22,7 +22,7 @@ sitemap:
 		<summary>Some text.</summary>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				{{ post.content }}
+				{{ post.content }} {% include feed-footer.html %}
 			</div>
 		</content>
 		<author>

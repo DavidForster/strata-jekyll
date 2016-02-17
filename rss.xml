@@ -16,7 +16,7 @@ sitemap:
     {% for post in site.posts limit:10 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
-      <description>{{ post.content | xml_escape }}</description>
+      <description><![CDATA[ {{ post.content }} {% include feed-footer.html %} ]]></description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <link>{{ post.url | prepend: siteurl }}</link>
       <guid isPermaLink="true">{{ post.url | prepend: siteurl }}</guid>
