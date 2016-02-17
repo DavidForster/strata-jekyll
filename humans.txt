@@ -1,0 +1,17 @@
+---
+---
+/* THANKS */
+  Jekyll Development: David Forster
+  Twitter: @DavidForster
+  Web: http://davidforster.com
+  From: Aylesbury, United Kingdom
+
+  Design: AJ
+  Twitter: @n33co
+  Web: http://html5up.net
+  From: Nashville, United States
+
+/* SITE */
+  Last Update: {{ site.time }}
+  Generator: Jekyll v{{ jekyll.version }} (http://jekyllrb.com)
+  IDE: Atom (https://atom.io)
