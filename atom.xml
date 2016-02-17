@@ -7,7 +7,7 @@
 	<subtitle>{{ site.description | markdownify | strip_html | xml_escape }}</subtitle>
 	<link href="{{ siteurl }}/atom.xml" rel="self" />
 	<link href="{{ siteurl }}/" />
-	<id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+	<id>{{ siteurl }}/</id>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
   {% for post in site.posts limit:10 %}
 	<entry>
