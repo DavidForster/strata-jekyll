@@ -6,7 +6,6 @@ description: >
 copyright: Untitled
 sass:
   sass_dir: assets/sass
-url: http://example.com
 facebook_username:
 twitter_username: "#"
 linkedin_username: "#"
@@ -18,3 +17,5 @@ email: "#"
 gems: [jekyll-paginate]
 paginate_path: "/page/:num/"
 paginate: 5
+github:
+  url: http://localhost:4000
