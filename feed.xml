@@ -5,7 +5,7 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
+    <description>{{ site.description | markdownify | strip_html | xml_escape }}</description>
     {% if site.github.url %}
     <link>{{ site.github.url }}/</link>
     {% else %}
