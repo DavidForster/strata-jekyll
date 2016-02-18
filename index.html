@@ -6,7 +6,7 @@ layout: default
   <section>
     <h1><a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a></h1>
     <p>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span>{{ post.date | date: "%d %B %Y" }}{% if page.categories %} on {{ page.categories | join: ', ' }}{% endif %}</span>
     </p>
     <div>
       {{ post.excerpt }}
