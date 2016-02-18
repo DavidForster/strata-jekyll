@@ -25,6 +25,7 @@
           {{ content }}
         </section>
       </article>
+      {% if page.previous.url or page.next.url %}
       <hr />
       <div class="row">
         <article class="6u 12u$(xsmall) work-item">
@@ -42,6 +43,7 @@
           {% endif %}
   			</article>
       </div>
+      {% endif %}
 
 		</div>
 
