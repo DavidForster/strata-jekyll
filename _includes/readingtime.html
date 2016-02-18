@@ -1,0 +1,6 @@
+{% assign minutes = content | number_of_words | divided_by: 180 | round: 0 %}
+{% if minutes >= 2 %}
+  {{ minutes }} minutes
+{% else %}
+  {{ minutes }} minute
+{% endif %}

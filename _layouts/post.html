@@ -15,7 +15,10 @@
       <article>
         <header>
           <h1>{{ page.title }}</h1>
-          <p>{{ page.date | date: "%d %B %Y" }}{% if page.categories %} on {{ page.categories | join: ', ' }}{% endif %}</p>
+          <p>
+            {{ page.date | date: "%d %B %Y" }}{% if page.categories %} on {{ page.categories | array_to_sentence_string }}{% endif %}.
+            {% include readingtime.html %} to read.
+          </p>
         </header>
 
         <section>
