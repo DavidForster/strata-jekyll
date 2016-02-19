@@ -29,6 +29,9 @@
           {{ content }}
         </section>
       </article>
+
+      {% include disqus.html %}
+
       {% if page.previous.url or page.next.url %}
       <hr />
       <div class="row">

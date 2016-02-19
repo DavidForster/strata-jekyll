@@ -7,6 +7,7 @@ copyright: Untitled
 sass:
   sass_dir: assets/sass
 url: http://localhost:4000
+disqus_username: stratajekylldemo
 facebook_username:
 twitter_username: "#"
 linkedin_username: "#"
