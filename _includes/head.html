@@ -1,4 +1,4 @@
-<title>{% if page.title %}{{ page.title | append:' - ' | append:site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title | append:' - ' | append:site.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta charset="utf-8" />
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description | markdownify | strip_html }}{% endif %}" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
