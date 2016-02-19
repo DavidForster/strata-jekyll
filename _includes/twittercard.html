@@ -5,6 +5,6 @@
 <meta name="twitter:title" content="{% if page.title %}{{ page.title | truncate: 70 }}{% else %}{{ site.title | truncate: 70 }}{% endif %}" />
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 200 }}{% else %}{{ site.description | markdownify | strip_html | truncate: 200 }}{% endif %}" />
 {% if page.image %}
-<meta name="twitter:image" content="{{ page.image | append: site.github.url }}" />
+<meta name="twitter:image" content="{{site.github.url }}{{ page.image }}" />
 {% endif %}
 {% endif %}

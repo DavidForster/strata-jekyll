@@ -4,6 +4,6 @@
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description | markdownify | strip_html }}{% endif %}" />
 <meta property="og:site_name" content="{{ site.title }}" />
 {% if page.image %}
-<meta property="og:image" content="{{ page.image }}" />
+<meta property="og:image" content="{{site.github.url }}{{ page.image }}" />
 {% endif %}
 <meta property="og:url" content="URL" />
