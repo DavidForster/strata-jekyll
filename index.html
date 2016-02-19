@@ -5,7 +5,7 @@ image: /images/fulls/01.jpg
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <section>
-    <h1><a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a></h1>
+    <h2><a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a></h2>
     <p>
       <span>{{ post.date | date: "%d %B %Y" }}{% if page.categories %} on {{ page.categories | join: ', ' }}{% endif %}</span>
     </p>
