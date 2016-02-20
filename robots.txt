@@ -1,3 +1,9 @@
+---
+sitemap:
+  exclude: 'yes'
+---
 # robotstxt.org/
-
-User-agent: *
+User-Agent: *
+Disallow:
+{% capture siteurl %}{% if site.github.url %}{{ site.github.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
+Sitemap: {{ siteurl }}/sitemap.xml
