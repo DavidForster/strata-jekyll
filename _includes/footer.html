@@ -25,7 +25,9 @@
       {% if site.email %}
       <li><a href="mailto:{{ site.email }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
       {% endif %}
-      <li><a href="{{ site.github.url }}/rss.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      {% if site.feed_icon %}
+      <li><a href="{{ site.github.url }}/{{ site.feed_icon }}.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      {% endif %}
     </ul>
     <ul class="copyright">
       <li>&copy; {{ site.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

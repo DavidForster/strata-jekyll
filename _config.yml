@@ -15,6 +15,7 @@ instagram_username:
 pinterest_username:
 flickr_username:
 github_username:  "#"
+feed_icon: rss
 email: "#"
 gems: [jekyll-paginate]
 paginate_path: "/page/:num/"
