@@ -1,6 +1,6 @@
 ---
 sitemap:
-  exclude: 'yes'
+  exclude: true
 ---
 # robotstxt.org/
 User-Agent: *

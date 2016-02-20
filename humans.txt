@@ -1,7 +1,7 @@
 ---
 layout: null
 sitemap:
-  exclude: 'yes'
+  exclude: true
 ---
 /* THANKS */
   Jekyll Development: David Forster
