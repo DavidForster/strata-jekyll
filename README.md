@@ -24,7 +24,7 @@ The last 10 posts are available in RSS and Atom format at `rss.xml` and `atom.xm
 
 ### Feed footer
 
-A footer is added to every post in both the RSS and Atom feeds. This is configurable by editing `include/feed-footer.html`.
+A footer is added to every post in both the RSS and Atom feeds. This is configurable by editing `_includes/feed-footer.html`.
 
 ### Sitemap
 
@@ -47,7 +47,7 @@ Social media icon links in the footer are enabled by adding or removing values f
 - Flickr - `flickr_username:`
 - Github - `github_username:`
 
-You can change the icon order and add more options by editing `includes/footer.html`. I recommended a maximum number of 5 icons in total (including the feed icon).
+You can change the icon order and add more options by editing `_includes/footer.html`. I recommended a maximum number of 5 icons in total (including the feed icon).
 
 ### Reading time
 
