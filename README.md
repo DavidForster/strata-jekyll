@@ -93,3 +93,9 @@ The theme includes a basic robots.txt file which allows all robots to crawl the 
 ## Contributions
 
 Issues, Pull Requests, Tweets and Forks are all greatly appreciated!
+
+## License
+
+The Jekyll theme is licensed under the [MIT](http://choosealicense.com/licenses/mit/) License
+
+The Strata design is licensed under the [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/) license.
