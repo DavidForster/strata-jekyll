@@ -4,6 +4,22 @@ A simple, responsive blog theme for the [Jekyll](http://jekyllrb.com) static sit
 
 ![preview](preview.jpg)
 
+Browse the [demo](http://davidforster.com/strata-jekyll/).
+
+## How to use
+
+### Quick start
+
+If you just want to get a blog up & running at [GitHub Pages](https://pages.github.com) then simply fork this repository to your own GitHub account and name the new repository *\<yourgithubusername\>.github.io*. GitHub should then start hosting your site at *http://\<yourrgithubusername\>.github.io/*. If you'd like to use your own domain name you can follow GitHub's guide to using a [custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
+
+Edit the `_config.yml` file and use the options available in the theme, as mentioned below in the features section, to customise your site.
+
+I recommend Development Seed's awesome [Prose](http://prose.io) editor to write your posts.
+
+### Local development
+
+If you want to run and develop locally on your own computer then you'll need the Ruby programming language and Jekyll installed. The Jekyll website has a handy [installation guide](http://jekyllrb.com/docs/installation/) in their online documentation. Once installed, you can download or clone this repository and run `bundle exec jekyll serve` from the root.
+
 ## Features
 
 ### Disqus comments
@@ -45,7 +61,7 @@ Social media icon links in the footer are enabled by adding or removing values f
 - Instagram - `instagram_username:`
 - Pinterest - `pinterest_username:`
 - Flickr - `flickr_username:`
-- Github - `github_username:`
+- GitHub - `github_username:`
 
 You can change the icon order and add more options by editing `_includes/footer.html`. I recommended a maximum number of 5 icons in total (including the feed icon).
 
@@ -63,7 +79,7 @@ The Next and Previous posts are displayed underneath every post (and Disqus comm
 
 ### Custom 404
 
-If you host your site with [Github Pages](https://pages.github.com) then a custom 404 page has been added (see `404.md`)
+If you host your site with [GitHub Pages](https://pages.github.com) then a custom 404 page has been added (see `404.md`)
 
 ### robots.txt and humans.txt
 
@@ -73,3 +89,7 @@ The theme includes a basic robots.txt file which allows all robots to crawl the 
 
 - [AJ](https://twitter.com/n33co) and [HTML5UP](http://html5up.net) for the design of Strata
 - [David Ensinger](http://davidensinger.com) for a bunch of tips and ideas related to Jekyll
+
+## Contributions
+
+Issues, Pull Requests, Tweets and Forks are all greatly appreciated!
