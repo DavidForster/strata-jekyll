@@ -7,7 +7,7 @@ image: /images/fulls/01.jpg
   <section>
     <h2><a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a></h2>
     <p>
-      <span>{{ post.date | date: "%d %B %Y" }}{% if post.categories %} on {{ post.categories | join: ', ' }}{% endif %}</span>
+      <span><i class="fa fa-calendar"></i> {{ post.date | date: "%d %B %Y" }}{% if post.categories %} on <i class="fa fa-tags"></i> {{ post.categories | join: ', ' }}{% endif %}</span>
     </p>
     <div>
       {{ post.excerpt }}
